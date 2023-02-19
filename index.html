@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>eZee Linkz</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <img class="header-logo" src="images/app-logo.png" alt="eeZee Linkz Logo">
+    </div>
+    <hr/>
+    <div class="input-group">
+      <input type="url" id="url-input" placeholder="https://www.google.com" required>
+      <button type="button" title="Get eeZee Link" onclick="getEeZeeLink()">GET</button>
+      <button type="button" title="Reset App" onclick="clearUrl()">Reset</button>
+    </div>
+    <div id="shortened-url" title="Visit"></div>
+    <div id="copyshare" class="d-none centered">
+      <img title="Copy Link" class="copy" onclick="copyToClipboard()" width="20px" height="20px" src="images/copy.png"
+        alt="copy icon">
+      <img title="Share Link" class="share" onclick="shareLink()" width="20px" height="20px" src="images/share.png"
+        alt="share icon">
+    </div>
+    <div id="qr-code" class="d-none"></div>
+    <p id="qr-caption" class="d-none p-qr"><strong>Scan to visit. Right-click to download.</strong></p>
+    <hr/>
+    <div class="centered-footer">
+      <p class="p-note">Powered by <a href="https://bitly.com/">Bitly</a> || <a
+          href="https://github.com/arun-j-raman/Responsive-Web-Design" target="_blank">
+          <i class="fa-brands fa-github app-col-default"></i>
+          View on GitHub
+        </a></p>
+    </div>
+  </div>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/qrcode.min.js"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
