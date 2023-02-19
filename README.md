@@ -1,4 +1,4 @@
 # eeZeeLinkZ
 
 eeZee links is a single page web application that enables a user to shorten any URL on the go. 
-Uses Bitly endpoint to shorten links.
+The app utilizes Bitly's endpoint to shorten links.
